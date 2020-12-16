@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>tianmao</title>
+	<style>
+	    *{
+	    	margin: 0;
+	    	padding: 0;
+	    }
+	    body{
+			background-color:#f7f7f7;
+		}
+	    li{
+	    	list-style-type: none;
+	    }
+	    a{
+	    	text-decoration: none;
+	    }
+		#top{
+			width: 1200px;
+			height: 150px;
+			margin: 0 auto;
+		}
+		#top h1{
+			font-size: 90px;
+			line-height: 130px;
+			color: #ff0036;
+			position: absolute;
+			left: 200px;
+		}
+		#inputs{
+			width: 539px;
+			height: 33px;
+			border: 3.5px solid #ff0036;
+			display: inline-block;
+			position: absolute;
+			top: 60px;
+			right: 400px;
+		}
+		#oinput{
+			width: 448px;
+			height: 30px;
+			outline: none;
+			border: solid 3px #ff0036;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			text-align: left;
+		}
+		#inputs button{
+			color: white;
+			font-size:20px ;
+			background-color: #ff0036;
+			border: solid 1px #ff0036;
+			outline: none;
+			outline-color: #ff0036;
+			width: 91px;
+			height: 35px;
+			position: absolute;
+			top: 0px;
+			right: -1px;
+		}
+		#dao{
+			width: 990px;
+			height: 40px;
+			margin: 0 auto;
+			background-color: #ff0036;
+		}
+		#dao li{
+			display: inline-block;
+			width: 80px;
+			height: 40px;
+			padding-left: 12px;
+		}
+		#dao li a{
+			color: white;
+			font-size: 20px;
+			line-height: 40px;
+		}
+		#dao li:hover a{
+			background-color: white;
+			color: #ff0036;
+		}
+		#dao li a:hover{
+			color: #ff0036;
+		}
+		#center{
+			width: 1200px;
+			height: 665px;
+			padding-left: 220px;
+			padding-bottom: 30px;
+		}
+		#center p{
+			font-size: 30px;
+			color: #ff0036;
+		}
+		#center span{
+			font-size:25px;
+		}
+		#center ul{
+			width: 960px;
+			height: 618px;
+			float: right;
+		}
+		#center li{
+			width: 200px;
+			height: 302px;
+			display: inline-block;
+			margin-left: 10px;
+			margin-bottom: 15px;
+			text-align: center;
+			float: left;
+			background-color: white;
+		}
+		#center li img{
+			width: 185px;
+			height: 185px;
+		}
+		#center li p{
+			font-size: 20px;
+			color: black;
+		}
+		#center li p:last-child{
+			font-size: 25px;
+			color: #ff0036;
+			padding-bottom: 10px;
+		}
+		#bottom{
+			width: 1510px;
+			height: 100px;
+			background-color: #ff0036;
+			color: white;
+			text-align: center;
+			line-height: 20px;
+			font-size: 20px;
+			padding-top: 20px;
+		}
+		#pass{
+			width: 300px;
+			height: 60px;
+			float: right;
+		}
+		#pass input{
+			width: 150px;
+			height: 20px;
+			display: inline-block;
+			outline: none;
+		}
+		#name{
+			position: absolute;
+			right: 30px;
+			top: 30px;
+		}
+		#password{
+			position: absolute;
+			right: 30px;
+			top: 60px;
+		}
+		#pass button{
+			background-color: #ff0036;
+			border: 1px solid #ff0036;
+			color: white;
+			width: 50px;
+			height: 20px;
+			outline: none;
+		}
+		#pass p{
+			color: #ff0036;
+			display: inline-block;
+			position: absolute;
+			top: 60px;
+			right: 70px;
+			font-size: 30px;
+
+		}
+		#b1{
+			position: absolute;
+			right: 125px;
+			top: 100px;
+		}
+		#b2{
+			position: absolute;
+			right: 40px;
+			top: 100px;
+		}
+		#banner{
+			width: 1510px;
+			height: 317px;
+			padding-top: 10px;
+			text-align: center;
+		}
+		#banner img{
+			width: 1200px;
+			height: 317px;
+		}
+	</style>
+</head>
+<body>
+	<div id="top">
+		<h1>天猫</h1>
+		<div id="inputs">
+			<input type="text" id="oinput" placeholder="搜索 天猫 商品/品牌/店铺">
+			<a><button>搜索</button></a>
+		</div>
+		<div id="pass">
+			<input type="text" placeholder="用户名" id="name" value="">
+			<input type="password" placeholder="密码" id="password" value="">
+			<button id="b1" onclick="zhuce()">注册</button>
+			<button id="b2" onclick="denglu()">登录</button>
+			<!-- <p>欢迎回来</p> -->
+		</div>
+	</div>
+	<div id="dao">
+		<ul>
+			<li><a href="#">天猫超市</a></li>
+			<li><a href="#">天猫国际</a></li>
+			<li><a href="#">天猫会员</a></li>
+			<li><a href="#">电器城</a></li>
+			<li><a href="#">喵鲜生</a></li>
+			<li><a href="#">医药馆</a></li>
+			<li><a href="#">营业厅</a></li>
+			<li><a href="#">魅力惠</a></li>
+			<li><a href="#">飞猪旅行</a></li>
+			<li><a href="#">苏宁易购</a></li>
+		</ul>
+	</div>
+	<div id="banner">
+		<img src="images/banner1.jpg" style="display:inline-block">
+		<img src="images/banner2.jpg" style="display:none">
+		<img src="images/banner3.jpg" style="display:none">
+	</div>
+	<div id="center">
+		<a href="#"><p>潮电酷玩 <span> ELECTRONICS</span></p></a>
+		<img src="images/chaodian1.png" width="235px" height="618px" display="inline-block">
+		<ul>
+			<li><a href="#"><img src="images/chaodian2.jpg"><p>HP/惠普4YH34AA蓝牙鼠标无线双模幽灵</p><p>¥369</p></a></li>
+			<li><a href="#"><img src="images/chaodian3.png"><p>爱国者战警650台式机电脑主机电源宽幅</p><p>¥139</p></a></li>
+			<li><a href="#"><img src="images/chaodian4.jpg"><p>Edifier/漫步者 TWS5真无线蓝牙运动耳机</p><p>¥499</p></a></li>
+			<li><a href="#"><img src="images/chaodian5.jpg"><p>飞利浦空气净化器滤网ac4199适配</p><p>¥138</p></a></li>
+			<li><a href="#"><img src="images/chaodian6.jpg"><p>Makeblock 童心制物光环板单板 无线联网</p><p>¥99</p></a></li>
+			<li><a href="#"><img src="images/chaodian7.jpg"><p>金河田 玄冰400PLUS台式散热器智能控温</p><p>¥159.9</p></a></li>
+			<li><a href="#"><img src="images/chaodian8.jpg"><p>Tt风扇集线器<br/>Commander FP风扇</p><p>¥72</p></a></li>
+			<li><a href="#"><img src="images/chaodian9.jpg"><p>Antec/安钛克 GX-Dracarys龙焰中塔</p><p>¥299</p></a></li>
+		</ul>
+	</div>
+	<div id="center">
+		<a href="#"><p>居家生活 <span> GROCERY & HEALTH</span></p></a>
+		<img src="images/jujia1.jpg" width="235px" height="618px" display="inline-block">
+		<ul>
+			<li><a href="#"><img src="images/jujia2.jpg"><p>新东方官方旗舰店 初中英语</p><p>¥16.25</p></a></li>
+			<li><a href="#"><img src="images/jujia3.jpg"><p>【哈哈镜食品旗舰店-锁鲜】气调盒装香麻</p><p>¥10.9</p></a></li>
+			<li><a href="#"><img src="images/jujia4.jpg"><p>创意可爱不锈钢便携套装筷子三件套</p><p>¥5.1</p></a></li>
+			<li><a href="#"><img src="images/jujia5.png"><p>谷登猫专用羊奶粉猫咪营养品调理肠胃</p><p>¥28</p></a></li>
+			<li><a href="#"><img src="images/jujia6.jpg"><p>【3盒】三精牌葡萄糖酸锌口服液</p><p>¥73.5</p></a></li>
+			<li><a href="#"><img src="images/jujia7.jpg"><p>强生婴儿天然舒润滋养润肤露</p><p>¥27</p></a></li>
+			<li><a href="#"><img src="images/jujia8.jpg"><p>打狗棒神奇宠物狗狗用品宠物爱心拍</p><p>¥10.8</p></a></li>
+			<li><a href="#"><img src="images/jujia9.jpg"><p>日本进口花王衣物漂白剂 去渍增亮</p><p>¥20.8</p></a></li>
+		</ul>
+	</div>
+	<div id="center">
+		<a href="#"><p>打造爱巢 <span> HOME</span></p></a>
+		<img src="images/dazao1.jpg" width="235px" height="618px" display="inline-block">
+		<ul>
+			<li><a href="#"><img src="images/dazao2.jpg"><p>天际煮粥锅DGD-30CWD/MT/TA陶瓷</p><p>¥53</p></a></li>
+			<li><a href="#"><img src="images/dazao3.jpg"><p>小熊电饼铛电热薄饼机春卷皮千层</p><p>¥149</p></a></li>
+			<li><a href="#"><img src="images/dazao4.jpg"><p>拉花礼包 （拉花杯+拉花针）</p><p>¥118</p></a></li>
+			<li><a href="#"><img src="images/dazao5.jpg"><p>百乐满不锈钢烟管16-24升平衡机</p><p>¥100</p></a></li>
+			<li><a href="#"><img src="images/dazao6.jpg"><p>美容院小推车多功能三层皮肤管理纹绣美</p><p>¥138</p></a></li>
+			<li><a href="#"><img src="images/dazao7.jpg"><p>荣事达电饭煲家用4L容量机械老式煮饭</p><p>¥129</p></a></li>
+			<li><a href="#"><img src="images/dazao8.png"><p>美容院凳子旋转理发店美容院专用美甲</p><p>¥99</p></a></li>
+			<li><a href="#"><img src="images/dazao9.jpg"><p>海尔家用中央空调-拖-风管机 wifi模式</p><p>¥160</p></a></li>
+		</ul>
+	</div>
+	<div id="center">
+		<a href="#"><p>户外出行 <span> OUTDOORS & AUTOMOTIVE</span></p></a>
+		<img src="images/huwai1.jpg" width="235px" height="618px" display="inline-block">
+		<ul>
+			<li><a href="#"><img src="images/huwai2.jpg"><p>Adidas阿迪达斯难保女包新款旅行挎包</p><p>¥129</p></a></li>
+			<li><a href="#"><img src="images/huwai3.jpg"><p>探路者男鞋2020新款运动鞋休闲</p><p>¥199</p></a></li>
+			<li><a href="#"><img src="images/huwai4.jpg"><p>2020新款冬季加绒加厚冲锋衣男</p><p>¥169</p></a></li>
+			<li><a href="#"><img src="images/huwai5.jpg"><p>卡骆驰儿童鞋贝雅卡洛班涉水洞洞</p><p>¥149</p></a></li>
+			<li><a href="#"><img src="images/huwai6.jpg"><p>耐克小书包女运动包背包学生儿童迷你</p><p>¥139</p></a></li>
+			<li><a href="#"><img src="images/huwai7.jpg"><p>春夏经典款TheNorthFace北面</p><p>¥675</p></a></li>
+			<li><a href="#"><img src="images/huwai8.jpg"><p>特价清仓<br/>哥伦比亚户外透气长袖</p><p>¥219</p></a></li>
+			<li><a href="#"><img src="images/huwai9.jpg"><p>【经典款】<br/>天百岚户</p><p>¥1490</p></a></li>
+		</ul>
+	</div>
+	<div id="bottom">
+		<p>关于天猫 帮助中心 开放平台 诚聘英才 联系我们 法律声明 隐私权政策<br/>增值电信业务许可证：xxxxxxx<br/>市场名称登记证：xxxxxx<br/>tianmao版权所有</p>
+	</div>
+	<script type="text/javascript">
+		var index=0;
+		var name=document.getElementById('name').value;
+		var password= document.getElementById('password').value;
+		function imgChange(){
+			index ++;
+			var a = document.getElementById('banner').getElementsByTagName('img');
+			if(index>=3)
+				index=0;
+			for(var i=0;i<3;i++){
+				a[i].style.display='none';
+			}
+			a[index].style.display='inline-block';
+		}
+		setInterval('imgChange()',1000);
+		function zhuce(){
+			var name=document.getElementById('name').value;
+			var password= document.getElementById('password').value;
+			if(name!=''&&password!=''){
+				alert(name+'注册成功');
+			}
+			else if(name=''){
+				alert('用户名不能为空');
+			}
+			else if(password=''){
+				alert('密码不能为空');
+			}
+			document.getElementById('pass').innerHTML = '<p>欢迎 '+name+'</p>';
+		}
+		function denglu(){
+			var name=document.getElementById('name').value;
+			var password= document.getElementById('password').value;
+			if(name!=''&&password!=''){
+				alert(name+'登录成功');
+			}
+			else if(name=''){
+				alert('用户名不能为空');
+			}
+			else if(password=''){
+				alert('密码不能为空');
+			}
+			document.getElementById('pass').innerHTML = '<p>欢迎 '+name+'</p>';
+		}
+	</script>
+</body>
+</html>
