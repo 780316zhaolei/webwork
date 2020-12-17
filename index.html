@@ -309,6 +309,7 @@
 			var password= document.getElementById('password').value;
 			if(name!=''&&password!=''){
 				alert(name+'注册成功');
+				document.getElementById('pass').innerHTML = '<p>欢迎 '+name+'</p>';
 			}
 			else if(name=''){
 				alert('用户名不能为空');
@@ -316,13 +317,15 @@
 			else if(password=''){
 				alert('密码不能为空');
 			}
-			document.getElementById('pass').innerHTML = '<p>欢迎 '+name+'</p>';
+			
 		}
 		function denglu(){
 			var name=document.getElementById('name').value;
 			var password= document.getElementById('password').value;
 			if(name!=''&&password!=''){
 				alert(name+'登录成功');
+				document.getElementById('pass').innerHTML = '<p>欢迎 '+name+'</p>';
+		}
 			}
 			else if(name=''){
 				alert('用户名不能为空');
@@ -330,8 +333,7 @@
 			else if(password=''){
 				alert('密码不能为空');
 			}
-			document.getElementById('pass').innerHTML = '<p>欢迎 '+name+'</p>';
-		}
+			
 	</script>
 </body>
 </html>
