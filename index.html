@@ -311,11 +311,8 @@
 				alert(name+'注册成功');
 				document.getElementById('pass').innerHTML = '<p>欢迎 '+name+'</p>';
 			}
-			else if(name=''){
-				alert('用户名不能为空');
-			}
-			else if(password=''){
-				alert('密码不能为空');
+			else{
+				alert("输入不规范，请重新输入");
 			}
 			
 		}
@@ -325,15 +322,12 @@
 			if(name!=''&&password!=''){
 				alert(name+'登录成功');
 				document.getElementById('pass').innerHTML = '<p>欢迎 '+name+'</p>';
-		}
 			}
-			else if(name=''){
-				alert('用户名不能为空');
-			}
-			else if(password=''){
-				alert('密码不能为空');
+			else{
+				alert("输入不规范，请重新输入");
 			}
 			
+		}
 	</script>
 </body>
 </html>
